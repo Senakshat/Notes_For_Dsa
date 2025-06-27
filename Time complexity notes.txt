@@ -1,0 +1,14 @@
+ int count = 0;
+        for (int i = N; i > 0; i /= 2) {
+            for (int j = 0; j < i; j++) {
+                count += 1;
+            }
+        }
+why is this o(N)
+first loop:->LoG(N) n+n/2+n/4+... iterations:->Log base 2 N
+Second Loop:-> iterations: count->N+N/2+N/4...0
+the loop shrinks into total operations done in this fassion:
+in A geometric operation:-
+
+N+N/2+N/4...1
+therefore 2N as 1+1/2+1/4... =2
